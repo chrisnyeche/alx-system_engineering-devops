@@ -1,48 +1,15 @@
-# 0x0B. SSH
+<center> <h1>SSH Project</h1> </center>
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Username</th>
-      <th>IP</th>
-      <th>State</th>
-      <th></th>
-    </tr>
-  </thead>
+This project is about connecting to an Ubuntu server in a datacenter somewhere via SSH, but instead of using a password, we will use a private key.
 
-  <tbody>
-      <tr>
-        <td>59637-web-01</td>
-        <td><code>ubuntu</code></td>
-        <td><code>52.23.212.37</code></td>
-        <td>running</td>
-        <td>
-          <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
-              Actions
-              <span class="caret"></span>
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-right">
-                <li><a data-confirm="Are you sure to reboot 59637-web-01?" href="/servers/9390/soft_reboot">Soft reboot</a></li>
-                  <li><a data-confirm="Are you sure to hard reboot 59637-web-01?" href="/servers/9390/hard_reboot">Hard reboot</a></li>
+| Tasks | Description |
+| ----- | ----------- |
+| 1. Use a private key | Write a Bash script that uses ssh to connect to your server using the private key ~/.ssh/school with the user ubuntu. |
+| 2. Create an SSH key pair | Write a Bash script that creates an RSA key pair. |
+| 3. Client configuration file | Your machine has an SSH configuration file for the local SSH client, let’s configure it to our needs so that you can connect to a server without typing a password. Share your SSH client configuration in your answer file. |
+| 4. Let me in! | Now that you have successfully connected to your server, we would also like to join the party. |
+| 5. Client configuration file (w/ Puppet) | Let’s practice using Puppet to make changes to our configuration file. Just as in the previous configuration file task, we’d like you to set up your client SSH configuration file so that you can connect to a server without typing a password. |
 
-              <li role="separator" class="divider"></li>
+<center> <h2>AUTHOR</h2> </center>
 
-                <li>
-                  <a data-confirm="Are you sure you'd like a new server?
-- This server will be destroyed
-- Did you update your public SSH key in your user profile yet?
-
-This action can take time...
-Please, be patient..." href="/servers/9390/ask_new">
-                    Ask a new server
-</a>                </li>
-            </ul>
-          </div>
-        </td>
-      </tr>
-    
-  </tbody>
-</table>
+[Tammy Erekosima] (https://github.com/bigtammy1)
