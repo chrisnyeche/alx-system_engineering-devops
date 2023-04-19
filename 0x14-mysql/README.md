@@ -1,3 +1,3 @@
-#####MySQL
+# Install MYSQL
 
-This project is about installing MySQL 5.7 on our web servers
+Install Mysql Server on both servers
